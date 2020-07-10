@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Baking</string>
+    <string name="video_available">Video Available</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="steps">Steps</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="recipe">Recipe</string>
+    <string name="empty">Empty</string>
+    <string name="empty_view">A recipe is not selected</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="no_recipes">No Recipes for now</string>
+</resources>

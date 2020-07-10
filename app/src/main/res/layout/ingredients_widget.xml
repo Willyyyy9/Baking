@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/border_widget">
+
+    <TextView
+        android:id="@+id/recipeWidgetTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recipe"
+        android:textSize="36sp"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        android:fontFamily="@font/jelligun"
+        android:layout_margin="16dp"
+        android:background="#00000000"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp">
+        <StackView
+            android:id="@+id/ingredientStackViewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/widgetEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/empty_view"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/jelligun"
+            android:textSize="32sp"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

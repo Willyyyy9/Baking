@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/detailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="32sp"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/jelligun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Recipe Step" />
+
+    <TextView
+        android:id="@+id/videoAvailableTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/jelligun"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:text="@string/video_available"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/detailTextView"
+        app:layout_constraintTop_toBottomOf="@+id/detailTextView" />
+
+    <ImageView
+        android:id="@+id/videoIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/video_available_24dp"
+        android:contentDescription="@string/video_available"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/videoAvailableTextView"
+        app:layout_constraintStart_toEndOf="@+id/videoAvailableTextView"
+        app:layout_constraintTop_toTopOf="@+id/videoAvailableTextView"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
